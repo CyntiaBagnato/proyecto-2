@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../img/icono.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>OnlyMakeup-Contacto</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <a href="../index.html">
+        <img src="../img/icono.png" alt="Icono de pagina" />
+      </a>
+      <!-- LINKS -->
+      <nav>
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="./Productos.html">Productos</a></li>
+          <li><a href="./Contacto.html">Contacto</a></li>
+          <li><a href="./Como-comprar.html">Cómo Comprar</a></li>
+          <li>
+            <a href="./Preguntas-frecuentes.html">Preguntas Frecuentes</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <h1>Contacto</h1>
+      <br />
+      <form action="#" method="get">
+        <input
+          type="text"
+          placeholder="Nombre y apellido"
+          name="Nombreyapellido"
+          required
+        />
+        <br>
+        <input type="email" name="Email" placeholder="Email" required />
+       <br>
+        <input
+          type="tel"
+          placeholder="Número de teléfono"
+          name="NumeroTelefonico"
+          required
+        />
+     <br>
+        <textarea
+          name="consulta"
+          placeholder="Escribe tu consulta"
+          cols="30"
+          rows="10"
+        ></textarea>
+        <br>
+        <label
+          >¿Como querés que te contactemos?:
+          <select name="Elegir">
+            <option value="Elige una opcion">Elige una opcion</option>
+            <option value="Whatsapp">Whatsapp</option>
+            <option value="Email">Email</option>
+          </select>
+        </label>
+        <label>¿Quieres recibir nuestro Newsletter?<input type="checkbox" name="acepta" value="si" /></label>
+        <br />
+        <div>
+        <input type="submit" value="Enviar" />
+        <input type="reset" value="Borrar formulario" />
+      </div>
+      </form>
+    </main>
+    <footer class="footer">
+      <p>Nuestras Redes</p>
+      <section>
+        <a class="instagram" href="https://www.instagram.com/" target="_blank"
+          >INSTAGRAM</a
+        >
+        <a class="facebook" href="https://www.facebook.com/" target="_blank"
+          >FACEBOOK</a
+        >
+      </section>
+      <p>Amamos el maquillaje!&copy</p>
+    </footer>
+  </body>
+</html>
