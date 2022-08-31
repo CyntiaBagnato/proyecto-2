@@ -10,6 +10,12 @@
   width: 150px;
 }
 
+.nav-link{
+  color: black;
+  font-weight: 500;
+}
+
+
 .main,
 .mainProductos {
   min-height: 100vh;
@@ -91,6 +97,7 @@
     "aside brochas paletaBrillos";
   justify-items: stretch;
   align-items: stretch;
+  animation: backInRight;
 }
 
 .aside {
@@ -155,13 +162,6 @@
 /* 4K */
 
 @media (max-width: 2561px) {
-  /* .header {
-    justify-content: space-between;
-    font-size: large;
-  }
-  .header img {
-    width: 200px;
-  } */
 
   .grid-container {
     display: grid;
@@ -202,9 +202,7 @@
 /* LAPTOP */
 
 @media (max-width: 1500px) {
-  /* .header {
-    justify-content: space-between;
-  } */
+
   .grid-container {
     display: grid;
     grid-template-columns: repeat(3, 33.33%);
@@ -225,13 +223,17 @@
 
 }
 
+@media (max-width: 992px) {
+  .nav-link {
+    color: white;
+    font-weight: 500;
+  }
+}
+
 /* TABLET */
 
 @media (max-width: 769px) {
-  /* .header {
-    align-items: center;
-    flex-direction: column;
-  } */
+
   .grid-container {
     display: grid;
     grid-template-columns: repeat(3, 33.33%);
@@ -252,11 +254,12 @@
   .main p {
     font-size: large;
   }
+ 
 }
 
 /* MOBILE L */
 
-@media (max-width: 426px) {
+@media (max-width: 550px) {
   .grid-container {
     grid-template-columns: repeat(2, 50%);
     grid-template-rows: repeat(5, 20%);
@@ -282,12 +285,6 @@
 
 /* MOBILE M */
 @media (max-width: 376px) {
-  /* .header img {
-    width: 80px;
-  }
-  .header a {
-    font-size: small;
-  } */
 
   .grid-container img {
     width: 150px;
